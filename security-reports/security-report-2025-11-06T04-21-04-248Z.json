@@ -1,0 +1,322 @@
+{
+  "timestamp": "2025-11-06T04:21:06.629Z",
+  "website": "Escola Ilda Vieira Vilela",
+  "securityScore": {
+    "score": "2.8",
+    "issues": [
+      "0 vulnerabilidades info",
+      "0 vulnerabilidades low",
+      "5 vulnerabilidades moderate",
+      "0 vulnerabilidades high",
+      "0 vulnerabilidades critical",
+      "5 vulnerabilidades total",
+      "3 pacotes críticos desatualizados"
+    ],
+    "securityFeaturesActive": 7
+  },
+  "audit": {
+    "vulnerabilities": {
+      "esbuild": {
+        "name": "esbuild",
+        "severity": "moderate",
+        "isDirect": false,
+        "via": [
+          {
+            "source": 1102341,
+            "name": "esbuild",
+            "dependency": "esbuild",
+            "title": "esbuild enables any website to send any requests to the development server and read the response",
+            "url": "https://github.com/advisories/GHSA-67mh-4wv8-2f99",
+            "severity": "moderate",
+            "cwe": [
+              "CWE-346"
+            ],
+            "cvss": {
+              "score": 5.3,
+              "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+            },
+            "range": "<=0.24.2"
+          }
+        ],
+        "effects": [
+          "vite"
+        ],
+        "range": "<=0.24.2",
+        "nodes": [
+          "node_modules/esbuild"
+        ],
+        "fixAvailable": {
+          "name": "vite",
+          "version": "7.2.1",
+          "isSemVerMajor": true
+        }
+      },
+      "vite": {
+        "name": "vite",
+        "severity": "moderate",
+        "isDirect": true,
+        "via": [
+          "esbuild"
+        ],
+        "effects": [
+          "vite-node",
+          "vite-plugin-pwa",
+          "vitest"
+        ],
+        "range": "0.11.0 - 6.1.6",
+        "nodes": [
+          "node_modules/vite"
+        ],
+        "fixAvailable": {
+          "name": "vite",
+          "version": "7.2.1",
+          "isSemVerMajor": true
+        }
+      },
+      "vite-node": {
+        "name": "vite-node",
+        "severity": "moderate",
+        "isDirect": false,
+        "via": [
+          "vite"
+        ],
+        "effects": [
+          "vitest"
+        ],
+        "range": "<=2.2.0-beta.2",
+        "nodes": [
+          "node_modules/vite-node"
+        ],
+        "fixAvailable": {
+          "name": "vitest",
+          "version": "4.0.7",
+          "isSemVerMajor": true
+        }
+      },
+      "vite-plugin-pwa": {
+        "name": "vite-plugin-pwa",
+        "severity": "moderate",
+        "isDirect": true,
+        "via": [
+          "vite"
+        ],
+        "effects": [],
+        "range": "0.3.0 - 0.3.5 || 0.7.0 - 0.21.0",
+        "nodes": [
+          "node_modules/vite-plugin-pwa"
+        ],
+        "fixAvailable": {
+          "name": "vite-plugin-pwa",
+          "version": "1.1.0",
+          "isSemVerMajor": true
+        }
+      },
+      "vitest": {
+        "name": "vitest",
+        "severity": "moderate",
+        "isDirect": true,
+        "via": [
+          "vite",
+          "vite-node"
+        ],
+        "effects": [],
+        "range": "0.0.1 - 0.0.12 || 0.0.29 - 0.0.122 || 0.3.3 - 2.2.0-beta.2",
+        "nodes": [
+          "node_modules/vitest"
+        ],
+        "fixAvailable": {
+          "name": "vitest",
+          "version": "4.0.7",
+          "isSemVerMajor": true
+        }
+      }
+    },
+    "metadata": {
+      "vulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 5,
+        "high": 0,
+        "critical": 0,
+        "total": 5
+      },
+      "dependencies": {
+        "prod": 30,
+        "dev": 578,
+        "optional": 64,
+        "peer": 0,
+        "peerOptional": 0,
+        "total": 609
+      }
+    },
+    "auditReportVersion": 2,
+    "hasVulnerabilities": true
+  },
+  "outdatedPackages": {
+    "@types/react": {
+      "current": "18.3.26",
+      "wanted": "18.3.26",
+      "latest": "19.2.2",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\@types\\react"
+    },
+    "@types/react-dom": {
+      "current": "18.3.7",
+      "wanted": "18.3.7",
+      "latest": "19.2.2",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\@types\\react-dom"
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "current": "6.21.0",
+      "wanted": "6.21.0",
+      "latest": "8.46.3",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\@typescript-eslint\\eslint-plugin"
+    },
+    "@typescript-eslint/parser": {
+      "current": "6.21.0",
+      "wanted": "6.21.0",
+      "latest": "8.46.3",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\@typescript-eslint\\parser"
+    },
+    "@vitejs/plugin-react": {
+      "current": "4.7.0",
+      "wanted": "4.7.0",
+      "latest": "5.1.0",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\@vitejs\\plugin-react"
+    },
+    "cloudinary": {
+      "current": "1.41.3",
+      "wanted": "1.41.3",
+      "latest": "2.8.0",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\cloudinary"
+    },
+    "eslint": {
+      "current": "8.57.1",
+      "wanted": "8.57.1",
+      "latest": "9.39.1",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\eslint"
+    },
+    "eslint-plugin-react-hooks": {
+      "current": "4.6.2",
+      "wanted": "4.6.2",
+      "latest": "7.0.1",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\eslint-plugin-react-hooks"
+    },
+    "framer-motion": {
+      "current": "10.18.0",
+      "wanted": "10.18.0",
+      "latest": "12.23.24",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\framer-motion"
+    },
+    "react": {
+      "current": "18.3.1",
+      "wanted": "18.3.1",
+      "latest": "19.2.0",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\react"
+    },
+    "react-dom": {
+      "current": "18.3.1",
+      "wanted": "18.3.1",
+      "latest": "19.2.0",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\react-dom"
+    },
+    "react-helmet-async": {
+      "current": "1.3.0",
+      "wanted": "1.3.0",
+      "latest": "2.0.5",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\react-helmet-async"
+    },
+    "react-intersection-observer": {
+      "current": "9.16.0",
+      "wanted": "9.16.0",
+      "latest": "10.0.0",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\react-intersection-observer"
+    },
+    "react-router-dom": {
+      "current": "6.30.1",
+      "wanted": "6.30.1",
+      "latest": "7.9.5",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\react-router-dom"
+    },
+    "vite": {
+      "current": "5.4.21",
+      "wanted": "5.4.21",
+      "latest": "7.2.1",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\vite"
+    },
+    "vite-plugin-pwa": {
+      "current": "0.17.5",
+      "wanted": "0.17.5",
+      "latest": "1.1.0",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\vite-plugin-pwa"
+    },
+    "vitest": {
+      "current": "0.34.6",
+      "wanted": "0.34.6",
+      "latest": "4.0.7",
+      "dependent": "ildavieira",
+      "location": "C:\\wamp64\\www\\ildavieira\\ildavieira\\node_modules\\vitest"
+    }
+  },
+  "securityConfiguration": {
+    "vite.config.ts": {
+      "exists": true,
+      "hasCSP": false,
+      "hasHTTPS": false,
+      "hasXSS": true,
+      "hasNoSniff": true,
+      "size": 2099
+    },
+    "src/utils/securityConfig.ts": {
+      "exists": true,
+      "hasCSP": false,
+      "hasHTTPS": true,
+      "hasXSS": false,
+      "hasNoSniff": false,
+      "size": 3671
+    },
+    "index.html": {
+      "exists": true,
+      "hasCSP": true,
+      "hasHTTPS": true,
+      "hasXSS": true,
+      "hasNoSniff": true,
+      "size": 1901
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "ALTA",
+      "category": "Vulnerabilidades",
+      "action": "Executar \"npm audit fix --force\" para corrigir vulnerabilidades",
+      "risk": "Exposição a ataques de segurança"
+    },
+    {
+      "priority": "MÉDIA",
+      "category": "Atualizações",
+      "action": "Atualizar pacotes críticos: @types/react, react, vite",
+      "risk": "Perda de patches de segurança"
+    },
+    {
+      "priority": "ALTA",
+      "category": "Configuração",
+      "action": "Implementar headers de segurança adicionais (HSTS, CSP)",
+      "risk": "Website vulnerável a ataques XSS e MITM"
+    }
+  ]
+}

@@ -10,13 +10,23 @@ Site oficial da Escola Estadual Ilda Vieira Vilela, localizada no Grajaú, Cocai
 
 - Site React completo com 4 páginas
 - Design responsivo e moderno
-- Integração com Cloudinary (configurado)
-- Segurança e validação de formulários
-- SEO otimizado
+- Integração com Cloudinary com 17 imagens reais da escola
+- Segurança avançada e validação de formulários
+- SEO otimizado com Speed Insights
+- Headers de segurança implementados
+- Monitoramento de vulnerabilidades automatizado
 
-⏳ **Pendente**:
+🔒 **Segurança**:
 
-- Upload das imagens reais da escola para o Cloudinary (ver `CLOUDINARY-SETUP.md`)
+- Score atual: **2.8/10.0** (necessária atualização de dependências)
+- Headers de segurança: CSP, XSS Protection, HTTPS enforcement
+- Script de monitoramento: `npm run security:audit`
+- Plano de ação: `PLANO-ACAO-SEGURANCA.md`
+
+⚠️ **Ação Necessária**:
+
+- Atualizar dependências para corrigir 5 vulnerabilidades moderadas
+- Executar: `npm audit fix --force` (pode causar breaking changes)
 
 📚 **Guias Disponíveis**:
 
@@ -117,6 +127,30 @@ O site estará disponível em `http://localhost:3000`
 ```bash
 npm run build
 ```
+
+## 🛡️ Comandos de Segurança
+
+### Auditoria de Segurança
+
+```bash
+# Executar monitoramento completo
+npm run security:audit
+
+# Verificar vulnerabilidades apenas
+npm run security:test
+
+# Aplicar correções seguras
+npm run security:fix
+
+# Aplicar correções forçadas (breaking changes)
+npm run security:force-fix
+```
+
+### Scripts de Segurança
+
+- **`scripts/security-monitor.cjs`**: Script automático de monitoramento
+- **`PLANO-ACAO-SEGURANCA.md`**: Plano detalhado de melhorias
+- **`security-reports/`**: Relatórios JSON gerados automaticamente
 
 ### Preview da Build de Produção
 
