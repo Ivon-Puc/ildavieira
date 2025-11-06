@@ -9,11 +9,15 @@ const NossaEscola: React.FC = () => {
     { name: 'Quadra esportiva coberta', image: SCHOOL_IMAGES.quadra, icon: '🏀' },
     { name: 'Laboratório de ciências', image: SCHOOL_IMAGES.laboratorio, icon: '🔬' },
     { name: 'Laboratório de farmácia', image: SCHOOL_IMAGES.laboratorioFarmacia, icon: '💊' },
+    { name: 'Laboratório de química', image: SCHOOL_IMAGES.laboratorioQuimica, icon: '⚗️' },
     { name: 'Biblioteca/Sala de leitura', image: SCHOOL_IMAGES.biblioteca, icon: '📚' },
+    { name: 'Sala de informática', image: SCHOOL_IMAGES.salaInformatica, icon: '💻' },
     { name: 'Refeitório', image: SCHOOL_IMAGES.refeitorio, icon: '🍽️' },
     { name: 'Pátio coberto e descoberto', image: SCHOOL_IMAGES.patio, icon: '🌳' },
-    { name: 'Sala de recursos para PCDs', image: SCHOOL_IMAGES.salaPcd, icon: '♿' },
-    { name: 'Salas de aula climatizadas', image: SCHOOL_IMAGES.corredor, icon: '🏫' }
+    { name: 'Auditório', image: SCHOOL_IMAGES.auditorio, icon: '🎭' },
+    { name: 'Salas de aula climatizadas', image: SCHOOL_IMAGES.salaAula, icon: '🏫' },
+    { name: 'Secretaria', image: SCHOOL_IMAGES.secretaria, icon: '📋' },
+    { name: 'Entrada principal', image: SCHOOL_IMAGES.entradaPrincipal, icon: '🚪' }
   ]
 
   const management = [

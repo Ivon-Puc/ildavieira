@@ -24,19 +24,19 @@ const Home: React.FC = () => {
       title: 'Infraestrutura Moderna',
       description: 'Laboratórios equipados, quadra coberta, biblioteca e salas climatizadas.',
       icon: '🏢',
-      image: SCHOOL_IMAGES.laboratorio
+      image: SCHOOL_IMAGES.laboratorioFarmacia
     },
     {
       title: 'Corpo Docente Qualificado',
       description: 'Professores especialistas e mestres com experiência de mercado.',
       icon: '👨‍🏫',
-      image: SCHOOL_IMAGES.biblioteca
+      image: SCHOOL_IMAGES.salaAula
     },
     {
       title: 'Inclusão e Acessibilidade',
       description: 'Sala de recursos para PCDs com atendimento especializado.',
       icon: '♿',
-      image: SCHOOL_IMAGES.salaPcd
+      image: SCHOOL_IMAGES.biblioteca
     }
   ]
 
@@ -120,8 +120,8 @@ const Home: React.FC = () => {
             </div>
             <div className="about__image">
               <img 
-                src={getCloudinaryUrl(SCHOOL_IMAGES.patio, { width: 600, height: 400 })}
-                alt="Pátio da Escola Ilda Vieira Vilela"
+                src={getCloudinaryUrl(SCHOOL_IMAGES.entradaPrincipal, { width: 600, height: 400 })}
+                alt="Entrada principal da Escola Ilda Vieira Vilela"
                 loading="lazy"
               />
             </div>

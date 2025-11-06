@@ -39,20 +39,27 @@ export const getCloudinaryUrl = (
 
 // Mapear nomes das imagens existentes para IDs do Cloudinary
 export const SCHOOL_IMAGES = {
-  // Imagens principais da escola (faça upload das imagens da pasta 'imagens/' com estes nomes)
-  hero: 'samples/landscapes/beach-boat', // Temporário - substitua pela imagem da fachada
-  corredor: 'samples/landscapes/architecture-signs', // Temporário - substitua pela imagem do corredor
-  patio: 'samples/landscapes/nature-mountains', // Temporário - substitua pela imagem do pátio
-  quadra: 'samples/people/kitchen-bar', // Temporário - substitua pela imagem da quadra
-  refeitorio: 'samples/food/dessert', // Temporário - substitua pela imagem do refeitório
-  laboratorio: 'samples/people/smiling-man', // Temporário - substitua pela imagem do laboratório
-  laboratorioFarmacia: 'samples/animals/three-dogs', // Temporário - substitua pela imagem do lab de farmácia
-  biblioteca: 'samples/landscapes/girl-urban-view', // Temporário - substitua pela imagem da biblioteca
-  salaPcd: 'samples/people/boy-snow-hoodie', // Temporário - substitua pela imagem da sala PCD
-  diretoria: 'samples/cloudinary-icon', // Temporário - substitua pela imagem da diretoria
-  // Logos e identidade visual
-  logo: 'samples/logo', // Temporário - substitua pelo logo da escola
-  brasao: 'samples/cloudinary-group-photo' // Temporário - substitua pelo brasão
+  // Imagens principais da escola - IMAGENS REAIS AGORA!
+  hero: 'ildavieira/escola-fachada-principal', // Imagem da fachada para banner principal
+  corredor: 'ildavieira/corredor-estudantes', // Corredor da escola
+  patio: 'ildavieira/patio-recreio-escola', // Pátio de recreio
+  quadra: 'ildavieira/quadra-esportiva-coberta', // Quadra esportiva
+  refeitorio: 'ildavieira/refeitorio-estudantes', // Refeitório dos estudantes
+  laboratorio: 'ildavieira/laboratorio-ciencias', // Laboratório de ciências
+  laboratorioFarmacia: 'ildavieira/laboratorio-farmacia', // Laboratório de farmácia
+  biblioteca: 'ildavieira/sala-leitura-biblioteca', // Biblioteca/sala de leitura
+  salaInformatica: 'ildavieira/sala-informatica', // Sala de informática
+  laboratorioQuimica: 'ildavieira/laboratorio-quimica', // Laboratório de química
+  auditorio: 'ildavieira/auditorio-escola', // Auditório da escola
+  secretaria: 'ildavieira/secretaria-escola', // Secretaria
+  entradaPrincipal: 'ildavieira/entrada-principal', // Entrada principal
+  salaAula: 'ildavieira/sala-aula-1', // Sala de aula
+  diretoria: 'ildavieira/diretoria-escola', // Diretoria
+  // Imagens alternativas
+  patioAlternativo: 'ildavieira/patio-recreio-escola-2', // Pátio vista 2
+  quadraAlternativa: 'ildavieira/quadra-esportiva-coberta-2', // Quadra vista 2
+  refeitorioAlternativo: 'ildavieira/refeitorio-estudantes-2', // Refeitório vista 2
+  bibliotecaEstudantes: 'ildavieira/biblioteca-estudantes', // Biblioteca com estudantes
 } as const
 
 // Utilitário para imagens responsivas

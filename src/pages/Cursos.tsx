@@ -115,8 +115,8 @@ const Cursos: React.FC = () => {
       <section className="page-hero">
         <div className="page-hero__background">
           <img 
-            src={getCloudinaryUrl(SCHOOL_IMAGES.laboratorio, { width: 1920, height: 600 })}
-            alt="Laboratórios da Escola Ilda Vieira Vilela"
+            src={getCloudinaryUrl(SCHOOL_IMAGES.salaInformatica, { width: 1920, height: 600 })}
+            alt="Sala de informática da Escola Ilda Vieira Vilela"
             className="page-hero__bg-image"
           />
           <div className="page-hero__overlay"></div>
