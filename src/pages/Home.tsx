@@ -56,7 +56,7 @@ const Home: React.FC = () => {
       <section className="hero" ref={heroRef}>
         <div className="hero__background">
           <img 
-            src={getCloudinaryUrl(SCHOOL_IMAGES.hero, { width: 1920, quality: 80, format: 'webp' })}
+            src="https://res.cloudinary.com/dywhdgppg/image/upload/v1762401470/Ilda_vieira_vilela_3_dclr4v.jpg"
             alt="Fachada da Escola Ilda Vieira Vilela"
             className="hero__bg-image"
             loading="eager"
