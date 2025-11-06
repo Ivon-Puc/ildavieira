@@ -15,18 +15,35 @@ Acesse sua conta Cloudinary com as credenciais:
 Renomeie as imagens da pasta `imagens/` seguindo este padrão:
 
 ```
-// Imagens atuais → Novos nomes no Cloudinary
+// IMAGENS ATUAIS NA PASTA → NOVOS NOMES NO CLOUDINARY
+
+// Imagens principais da escola
 corredor erro.webp → ildavieira/corredor-estudantes
 IMG_5465.jpg → ildavieira/escola-fachada-principal
 IMG_5482.jpg → ildavieira/patio-recreio-escola
 IMG_5487.jpg → ildavieira/quadra-esportiva-coberta
 Labfarm.webp → ildavieira/laboratorio-farmacia
-patio erro 2.png → ildavieira/patio-recreio-escola
-quadra erro 2.png → ildavieira/quadra-esportiva-coberta
+patio erro 2.png → ildavieira/patio-recreio-escola-2
+patio erro.png → ildavieira/patio-recreio-escola-3
+quadra erro 2.png → ildavieira/quadra-esportiva-coberta-2
+quadra erro.png → ildavieira/quadra-esportiva-coberta-3
 refeitorio erro.webp → ildavieira/refeitorio-estudantes
+refeitorio erroo.webp → ildavieira/refeitorio-estudantes-2
 sala laboratorio erro.png → ildavieira/laboratorio-ciencias
+
+// Imagens WhatsApp (renomear conforme conteúdo)
 WhatsApp Image 2025-10-28 at 8.36.17 AM.jpeg → ildavieira/sala-leitura-biblioteca
-// etc...
+WhatsApp Image 2025-10-28 at 8.36.18 AM (1).jpeg → ildavieira/biblioteca-estudantes
+WhatsApp Image 2025-10-28 at 8.36.18 AM (2).jpeg → ildavieira/sala-informatica
+WhatsApp Image 2025-10-28 at 8.36.18 AM (3).jpeg → ildavieira/laboratorio-quimica
+WhatsApp Image 2025-10-28 at 8.36.18 AM (4).jpeg → ildavieira/auditorio-escola
+WhatsApp Image 2025-10-28 at 8.36.18 AM.jpeg → ildavieira/secretaria-escola
+WhatsApp Image 2025-10-28 at 8.36.19 AM (1).jpeg → ildavieira/entrada-principal
+WhatsApp Image 2025-10-28 at 8.36.19 AM (2).jpeg → ildavieira/sala-aula-1
+WhatsApp Image 2025-10-28 at 8.36.19 AM.jpeg → ildavieira/diretoria-escola
+
+// IMPORTANTE: Escolha uma das imagens principais para usar como:
+// - Banner da página inicial (hero): sugiro IMG_5465.jpg (fachada) → ildavieira/hero-banner
 ```
 
 ### 2. Upload via Interface Web
@@ -35,8 +52,21 @@ WhatsApp Image 2025-10-28 at 8.36.17 AM.jpeg → ildavieira/sala-leitura-bibliot
 2. Faça login com suas credenciais
 3. Vá em "Media Library"
 4. Clique em "Upload"
-5. Selecione suas imagens
-6. **IMPORTANTE**: Use os nomes sugeridos acima como "Public ID"
+5. Arraste e solte suas imagens OU clique em "Select files"
+6. **IMPORTANTE**: Para cada imagem, antes de confirmar o upload:
+   - Clique no campo "Public ID"
+   - Digite o nome correspondente da tabela acima (ex: `ildavieira/escola-fachada-principal`)
+   - Confirme o upload
+
+### 2.1. Upload em Lote (Recomendado)
+
+Se quiser fazer upload de todas de uma vez:
+
+1. Selecione todas as imagens da pasta `imagens/`
+2. No Cloudinary, vá em "Settings" → "Upload"
+3. Configure: "Auto-assign public ID" como "Disabled"
+4. Faça upload de todas
+5. Depois renomeie cada uma individualmente conforme a tabela acima
 
 ### 3. Estrutura de Pastas no Cloudinary
 

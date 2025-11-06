@@ -1,9 +1,10 @@
-// Configuração do Cloudinary
+// Configuração do Cloudinary usando Environment Variables
 export const CLOUDINARY_CONFIG = {
-  cloudName: 'ildavieira',
-  apiKey: '361293592591255',
-  apiSecret: 'Z972wKlL3_kgJ66Uf-Srz-rMC0o',
-  uploadPreset: 'ildavieira_preset', // Você precisa criar este preset no Cloudinary
+  cloudName: import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'ildavieira',
+  apiKey: import.meta.env.VITE_CLOUDINARY_API_KEY || '361293592591255',
+  // NOTA: apiSecret não deve ser usado no frontend por segurança
+  // Usar apenas no backend/servidor se necessário
+  uploadPreset: import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET || 'ildavieira_preset',
 } as const
 
 // Utilitário para gerar URL otimizada do Cloudinary
@@ -38,20 +39,20 @@ export const getCloudinaryUrl = (
 
 // Mapear nomes das imagens existentes para IDs do Cloudinary
 export const SCHOOL_IMAGES = {
-  // Renomear as imagens para refletir a escola
-  hero: 'ildavieira/escola-fachada-principal',
-  corredor: 'ildavieira/corredor-estudantes',
-  patio: 'ildavieira/patio-recreio-escola',
-  quadra: 'ildavieira/quadra-esportiva-coberta',
-  refeitorio: 'ildavieira/refeitorio-estudantes',
-  laboratorio: 'ildavieira/laboratorio-ciencias',
-  laboratorioFarmacia: 'ildavieira/laboratorio-farmacia',
-  biblioteca: 'ildavieira/sala-leitura-biblioteca',
-  salaPcd: 'ildavieira/sala-recursos-pcd',
-  diretoria: 'ildavieira/diretoria-administrativa',
+  // Imagens principais da escola (faça upload das imagens da pasta 'imagens/' com estes nomes)
+  hero: 'samples/landscapes/beach-boat', // Temporário - substitua pela imagem da fachada
+  corredor: 'samples/landscapes/architecture-signs', // Temporário - substitua pela imagem do corredor
+  patio: 'samples/landscapes/nature-mountains', // Temporário - substitua pela imagem do pátio
+  quadra: 'samples/people/kitchen-bar', // Temporário - substitua pela imagem da quadra
+  refeitorio: 'samples/food/dessert', // Temporário - substitua pela imagem do refeitório
+  laboratorio: 'samples/people/smiling-man', // Temporário - substitua pela imagem do laboratório
+  laboratorioFarmacia: 'samples/animals/three-dogs', // Temporário - substitua pela imagem do lab de farmácia
+  biblioteca: 'samples/landscapes/girl-urban-view', // Temporário - substitua pela imagem da biblioteca
+  salaPcd: 'samples/people/boy-snow-hoodie', // Temporário - substitua pela imagem da sala PCD
+  diretoria: 'samples/cloudinary-icon', // Temporário - substitua pela imagem da diretoria
   // Logos e identidade visual
-  logo: 'ildavieira/logo-escola-oficial',
-  brasao: 'ildavieira/brasao-sao-paulo'
+  logo: 'samples/logo', // Temporário - substitua pelo logo da escola
+  brasao: 'samples/cloudinary-group-photo' // Temporário - substitua pelo brasão
 } as const
 
 // Utilitário para imagens responsivas

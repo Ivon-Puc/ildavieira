@@ -2,6 +2,28 @@
 
 Site oficial da Escola Estadual Ilda Vieira Vilela, localizada no Grajaú, Cocaia - São Paulo. Uma aplicação React moderna, responsiva e segura que apresenta a história da escola, cursos técnicos oferecidos e informações de contato.
 
+**🌐 Site Online**: [ildavieiravilela.com.br](https://ildavieiravilela.com.br)
+
+## 📋 Status Atual
+
+✅ **Implementado**:
+
+- Site React completo com 4 páginas
+- Design responsivo e moderno
+- Integração com Cloudinary (configurado)
+- Segurança e validação de formulários
+- SEO otimizado
+
+⏳ **Pendente**:
+
+- Upload das imagens reais da escola para o Cloudinary (ver `CLOUDINARY-SETUP.md`)
+
+📚 **Guias Disponíveis**:
+
+- `CLOUDINARY-SETUP.md` - Instruções detalhadas de upload
+- `upload-guide.ps1` - Script PowerShell para facilitar o processo
+- `upload-guide.sh` - Script Bash para sistemas Unix
+
 ## 🌟 Características
 
 ### ✨ Design e UX
@@ -275,7 +297,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 Para dúvidas sobre o projeto ou a escola:
 
-- **Email**: contato@ildavieira.edu.br
+- **Site**: https://ildavieiravilela.com.br
 - **Telefone**: (11) 5931-3172
 - **Issues**: [GitHub Issues](https://github.com/Ivon-Puc/ildavieira/issues)
 

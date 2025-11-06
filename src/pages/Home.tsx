@@ -49,7 +49,7 @@ const Home: React.FC = () => {
           content="Escola Estadual Ilda Vieira Vilela no Grajaú, Cocaia. Cursos técnicos em Desenvolvimento de Sistemas, Vendas, Logística e Farmácia. 90% de empregabilidade." 
         />
         <meta name="keywords" content="escola técnica grajaú, cursos técnicos cocaia, ilda vieira vilela, desenvolvimento sistemas, vendas, logística, farmácia" />
-        <link rel="canonical" href="https://ildavieira.edu.br/" />
+        <link rel="canonical" href={`${import.meta.env.VITE_SITE_URL || 'https://ildavieiravilela.com.br'}/`} />
       </Helmet>
 
       {/* Hero Section */}
