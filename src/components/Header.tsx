@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="header__logo">
             <div className="header__logo-text">
-              <span className="header__logo-main">E.E ILDA VIEIRA VILELA</span>
+              <span className="header__logo-main">ESCOLA ILDA VIEIRA VILELA</span>
               <span className="header__logo-sub">Educação que Transforma</span>
             </div>
           </Link>
