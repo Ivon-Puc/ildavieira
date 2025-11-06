@@ -1,0 +1,326 @@
+// Nossa Escola Page Styles
+
+// History Section
+.history {
+  padding: var(--spacing-3xl) 0;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: start;
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-2xl);
+    }
+  }
+
+  &__title {
+    color: var(--primary-teal);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  &__story {
+    p {
+      margin-bottom: var(--spacing-lg);
+      font-size: var(--font-size-lg);
+      line-height: var(--line-height-relaxed);
+      color: var(--gray-700);
+      text-align: justify;
+    }
+  }
+
+  &__image {
+    position: sticky;
+    top: 100px;
+
+    @media (max-width: 767px) {
+      position: static;
+    }
+  }
+
+  &__image-placeholder {
+    background: linear-gradient(135deg, var(--primary-teal) 0%, var(--secondary-yellow) 100%);
+    color: var(--white);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+  }
+
+  &__image-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-lg);
+    display: block;
+  }
+}
+
+// School History Timeline
+.school-history {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--gray-100);
+
+  &__title {
+    text-align: center;
+    color: var(--primary-teal);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  &__timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--primary-teal);
+      transform: translateX(-50%);
+
+      @media (max-width: 767px) {
+        left: 30px;
+      }
+    }
+  }
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-2xl);
+  position: relative;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 60px;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    .timeline-item__content {
+      text-align: right;
+
+      @media (max-width: 767px) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__year {
+    background: var(--secondary-yellow);
+    color: var(--gray-900);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+    min-width: 120px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+      position: absolute;
+      left: -90px;
+      top: 0;
+      min-width: 80px;
+      font-size: var(--font-size-base);
+    }
+  }
+
+  &__content {
+    flex: 1;
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin: 0 var(--spacing-xl);
+
+    @media (max-width: 767px) {
+      margin: var(--spacing-lg) 0 0 0;
+    }
+
+    h3 {
+      color: var(--primary-teal);
+      margin-bottom: var(--spacing-md);
+    }
+
+    p {
+      color: var(--gray-700);
+      line-height: var(--line-height-relaxed);
+    }
+  }
+}
+
+// Infrastructure Section
+.infrastructure {
+  padding: var(--spacing-3xl) 0;
+
+  &__title {
+    text-align: center;
+    color: var(--primary-teal);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  &__card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+  }
+
+  &__card-image {
+    position: relative;
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__card-icon {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    background: var(--secondary-yellow);
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    box-shadow: var(--shadow-sm);
+  }
+
+  &__card-title {
+    padding: var(--spacing-lg);
+    color: var(--primary-teal);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    margin: 0;
+  }
+}
+
+// Management Section
+.management {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--gray-100);
+
+  &__title {
+    text-align: center;
+    color: var(--primary-teal);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 2px solid transparent;
+    transition: all var(--transition-normal);
+
+    &:hover {
+      border-color: var(--primary-teal);
+      transform: translateY(-4px);
+    }
+  }
+
+  &__card-icon {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-md);
+  }
+
+  &__card-role {
+    color: var(--primary-teal);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-lg);
+  }
+
+  &__card-name {
+    color: var(--gray-700);
+    font-size: var(--font-size-base);
+    margin: 0;
+  }
+}
+
+// Practical Info Section
+.practical-info {
+  padding: var(--spacing-3xl) 0;
+
+  &__title {
+    text-align: center;
+    color: var(--primary-teal);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+  }
+}
+
+.info-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--primary-teal);
+
+  &__title {
+    color: var(--primary-teal);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  p {
+    color: var(--gray-700);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+
+    strong {
+      color: var(--gray-900);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+}

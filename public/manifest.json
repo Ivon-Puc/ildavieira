@@ -1,0 +1,21 @@
+{
+  "name": "Escola Ilda Vieira Vilela",
+  "short_name": "Ilda Vieira",
+  "description": "Educação de excelência no Grajaú, Cocaia - São Paulo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#76A6A6",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
