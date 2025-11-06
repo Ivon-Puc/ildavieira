@@ -118,18 +118,21 @@
   &__content {
     padding: 0 var(--spacing-xl) var(--spacing-lg);
     flex: 1;
+    text-align: left;
   }
 
   &__title {
     color: var(--primary-teal);
     margin-bottom: var(--spacing-md);
     font-size: var(--font-size-xl);
+    text-align: left;
   }
 
   &__description {
     color: var(--gray-700);
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--spacing-lg);
+    text-align: left;
   }
 
   &__info {
@@ -151,12 +154,14 @@
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
     margin-bottom: var(--spacing-md);
+    text-align: left;
   }
 
   &__skills-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: left;
   }
 
   &__skill {
@@ -166,6 +171,7 @@
     margin-bottom: var(--spacing-xs);
     position: relative;
     padding-left: var(--spacing-lg);
+    text-align: left;
 
     &::before {
       content: '✓';
@@ -179,6 +185,7 @@
   &__footer {
     padding: var(--spacing-lg) var(--spacing-xl) var(--spacing-xl);
     border-top: 1px solid var(--gray-200);
+    text-align: left;
   }
 }
 
