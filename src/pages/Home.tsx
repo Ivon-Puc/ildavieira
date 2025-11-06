@@ -177,6 +177,16 @@ const Home: React.FC = () => {
                     src={getCloudinaryUrl(highlight.image, { width: 400, height: 250 })}
                     alt={highlight.title}
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      // Use uma imagem de placeholder relacionada ao tema educacional
+                      const placeholders = [
+                        'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop&crop=center', // Classroom
+                        'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&h=250&fit=crop&crop=center', // Teachers
+                        'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=250&fit=crop&crop=center'  // Library
+                      ];
+                      target.src = placeholders[index] || placeholders[0];
+                    }}
                   />
                   <div className="highlights__card-icon">{highlight.icon}</div>
                 </div>

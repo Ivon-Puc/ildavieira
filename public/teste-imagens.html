@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste Imagens Cloudinary - Escola Ilda Vieira</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .image-test { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        .image-test img { max-width: 300px; height: 200px; object-fit: cover; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Teste de Imagens do Cloudinary - Escola Ilda Vieira Vilela</h1>
+    
+    <div class="image-test">
+        <h3>Laboratório de Farmácia</h3>
+        <img src="https://res.cloudinary.com/ildavieira/image/upload/c_fill,q_auto,f_auto,w_300,h_200,g_auto/ildavieira/laboratorio-farmacia" 
+             alt="Laboratório de Farmácia" 
+             onload="this.nextElementSibling.textContent='✅ Imagem carregou com sucesso!'; this.nextElementSibling.className='success';"
+             onerror="this.nextElementSibling.textContent='❌ Erro ao carregar imagem'; this.nextElementSibling.className='error';">
+        <p>Carregando...</p>
+    </div>
+
+    <div class="image-test">
+        <h3>Sala de Aula</h3>
+        <img src="https://res.cloudinary.com/ildavieira/image/upload/c_fill,q_auto,f_auto,w_300,h_200,g_auto/ildavieira/sala-aula-1" 
+             alt="Sala de Aula" 
+             onload="this.nextElementSibling.textContent='✅ Imagem carregou com sucesso!'; this.nextElementSibling.className='success';"
+             onerror="this.nextElementSibling.textContent='❌ Erro ao carregar imagem'; this.nextElementSibling.className='error';">
+        <p>Carregando...</p>
+    </div>
+
+    <div class="image-test">
+        <h3>Biblioteca</h3>
+        <img src="https://res.cloudinary.com/ildavieira/image/upload/c_fill,q_auto,f_auto,w_300,h_200,g_auto/ildavieira/sala-leitura-biblioteca" 
+             alt="Biblioteca" 
+             onload="this.nextElementSibling.textContent='✅ Imagem carregou com sucesso!'; this.nextElementSibling.className='success';"
+             onerror="this.nextElementSibling.textContent='❌ Erro ao carregar imagem'; this.nextElementSibling.className='error';">
+        <p>Carregando...</p>
+    </div>
+
+    <div class="image-test">
+        <h3>Teste com Imagem de Exemplo (deve funcionar)</h3>
+        <img src="https://res.cloudinary.com/ildavieira/image/upload/c_fill,q_auto,f_auto,w_300,h_200,g_auto/samples/people/smiling-man" 
+             alt="Exemplo" 
+             onload="this.nextElementSibling.textContent='✅ Imagem carregou com sucesso!'; this.nextElementSibling.className='success';"
+             onerror="this.nextElementSibling.textContent='❌ Erro ao carregar imagem'; this.nextElementSibling.className='error';">
+        <p>Carregando...</p>
+    </div>
+</body>
+</html>
