@@ -21,6 +21,7 @@ export const getCSPHeaders = (): string => {
     "style-src 'self' 'unsafe-inline' fonts.googleapis.com",
     "font-src 'self' fonts.gstatic.com",
     "img-src 'self' res.cloudinary.com data: blob:",
+    "frame-src https://dialogflow.cloud.google.com https://console.dialogflow.com",
     "connect-src 'self' vitals.vercel-insights.com vercel.live",
     "frame-ancestors 'none'",
     "base-uri 'self'",

@@ -65,7 +65,7 @@ src/components/
                style-src 'self' 'unsafe-inline'; 
                script-src 'self'; 
                font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; 
-               frame-src https://console.dialogflow.com;">
+               frame-src https://dialogflow.cloud.google.com https://console.dialogflow.com;">
 ```
 
 ### **X-Frame-Options**
@@ -186,7 +186,7 @@ Para mudar a posição do botão:
 ### **URL do Iframe**
 
 ```
-https://console.dialogflow.com/api-client/demo/embedded/96a79b61-798d-4632-a1ce-1c62d81b1553
+https://dialogflow.cloud.google.com/api-client/demo/embedded/96a79b61-798d-4632-a1ce-1c62d81b1553
 ```
 
 ### **Permissões**
@@ -219,7 +219,7 @@ https://console.dialogflow.com/api-client/demo/embedded/96a79b61-798d-4632-a1ce-
 
 ### **Problema: Iframe não carrega**
 
-**Solução**: Verifique o CSP no `index.html` e o X-Frame-Options
+**Solução**: Verifique o CSP no `index.html` e o X-Frame-Options. O componente exibe um aviso com link direto para abrir o Dialogflow em nova aba caso o iframe não responda em até 5 segundos.
 
 ### **Problema: Widget não responsivo**
 

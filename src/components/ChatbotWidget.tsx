@@ -1,12 +1,37 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ChatbotWidget.scss';
 
 const ChatbotWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasLoaded, setHasLoaded] = useState(false);
+  const [showFallback, setShowFallback] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setHasLoaded(false);
+      setShowFallback(false);
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
+      if (!hasLoaded) {
+        setShowFallback(true);
+      }
+    }, 5000);
+
+    return () => window.clearTimeout(timer);
+  }, [isOpen, hasLoaded]);
 
   const toggleChatbot = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleLoad = () => {
+    setHasLoaded(true);
+    setShowFallback(false);
+  };
+
+  const dialogflowUrl = 'https://dialogflow.cloud.google.com/api-client/demo/embedded/96a79b61-798d-4632-a1ce-1c62d81b1553';
 
   return (
     <>
@@ -46,9 +71,22 @@ const ChatbotWidget: React.FC = () => {
               allow="microphone;"
               width="100%"
               height="100%"
-              src="https://console.dialogflow.com/api-client/demo/embedded/96a79b61-798d-4632-a1ce-1c62d81b1553"
+              src={dialogflowUrl}
               title="Chatbot Escola Ilda Vieira Vilela"
+              onLoad={handleLoad}
             />
+            {showFallback && (
+              <div className="chatbot-fallback" role="status">
+                <p>Não foi possível carregar o atendente automático no momento.</p>
+                <p>
+                  Acesse diretamente em{' '}
+                  <a href={dialogflowUrl} target="_blank" rel="noopener noreferrer">
+                    dialogflow.cloud.google.com
+                  </a>
+                  .
+                </p>
+              </div>
+            )}
           </div>
         </div>
       )}
